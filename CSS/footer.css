@@ -98,7 +98,7 @@ footer hr {
 
 @media screen and (max-width: 600px) {
 	.icons {
-		display: flow;
+		display: grid;
 		}
 	}
 
