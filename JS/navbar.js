@@ -3,7 +3,7 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
 
-  if (currentScrollPos === 10 || (currentScrollPos > 10 && currentScrollPos < 100)) {
+  if (currentScrollPos === 0 || (currentScrollPos > 0 && currentScrollPos < 120)) {
     document.getElementById("navbar").classList.remove("scrolled");
   } else {
     document.getElementById("navbar").classList.add("scrolled");
