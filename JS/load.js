@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
 	let loadingScreen = document.getElementById('loading-screen');
 	let progressBar = document.getElementById('loading-bar');
@@ -14,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
 					loadingScreen.style.display = 'none';
 					document.body.style.overflow = 'auto';
 				}, 500);
+				
+				window.scrollTo(0, 0);
 		}
 	}
 
@@ -22,4 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	setTimeout(function () {
 		loadingScreen.style.pointerEvents = 'none';
 	}, 1000);
+
+
 });

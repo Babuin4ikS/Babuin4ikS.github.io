@@ -1,3 +1,4 @@
+
 function textButton(index) {
     var dots = document.getElementById("dots" + index);
     var moreText = document.getElementById("more" + index);
