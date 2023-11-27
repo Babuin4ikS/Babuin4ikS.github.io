@@ -53,3 +53,17 @@ body {
 
 #more1, #more2, #more3, #more4 {display: none;}
 
+button {
+	padding: 8px 10px;
+	font-size: 14px;
+	border: none;
+	background-color: #494949;
+	color: #eeeeee;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #333;
+}
