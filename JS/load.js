@@ -4,22 +4,21 @@ document.addEventListener('DOMContentLoaded', function () {
 	let currentPercentage = 0;
 
 	function animateLoading() {
-		if (currentPercentage <= 100) {
+		if (currentPercentage <= 140) {
 				progressBar.style.width = currentPercentage + '%';
 				currentPercentage++;
-				setTimeout(animateLoading, 20);
+				setTimeout(animateLoading, 10);
 		} else {
 				loadingScreen.style.opacity = 0;
 				setTimeout(function () {
 					loadingScreen.style.display = 'none';
-					document.body.style.overflow = 'auto'; // Restabilim overflow după animație
+					document.body.style.overflow = 'auto';
 				}, 500);
 		}
 	}
 
 	animateLoading();
-
-	// Eliminarea ecranului de încărcare din fluxul normal al documentului
+	
 	setTimeout(function () {
 		loadingScreen.style.pointerEvents = 'none';
 	}, 1000);
